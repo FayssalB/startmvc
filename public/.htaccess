@@ -1,0 +1,6 @@
+# Activer le module de réécriture d'url
+RewriteEngine on
+
+# Lister les différentes règles de réécriture
+# L'expression ([0-9]+) de l'expression regulière se retrouve dans $1
+RewriteRule ^game/([0-9]+)$ index.php?page=game&id=$1
